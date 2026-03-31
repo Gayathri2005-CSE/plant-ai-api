@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # 🔥 Load YOLO model
-model = YOLO("runs/classify/plant_disease_model/weights/best.pt")
+model = YOLO("best.pt")
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
